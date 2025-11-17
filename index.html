@@ -3,37 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LuzCâmeraAção - Login</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>LuzCâmeraAção</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <style>
+  </style>
 </head>
+
 <body>
-  <div class="overlay">
-    <form class="register-box">
-      <div class="header">
-        <h1 class="logo">LuzCâmeraAção</h1>
-      </div>
+  <header class="navbar">
+    <div class="logo" onclick="window.location.href='index.html'"><img src="/assets/images/logo_doro.svg" alt="" class="logo_img"></div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="/pages/explorar.html">Explorar</a>
+      <a href="/pages/favoritos.html">Favoritos</a>
+      <a href="/pages/sobre.html">Sobre</a>
+    </nav>
+    <div class="actions">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder=" Buscar filmes..." 
+        class="search-bar"
+      >
+      <button class="search-btn" onclick="buscar()">Buscar</button>
+      <span class="user-name" style="color: white; margin: 0 15px;">Rodrigo</span>
+    </div>
+  </header>
 
-      <h2>Entrar na conta</h2>
-
-      <label for="email">E-mail</label>
-      <input type="email" id="email" placeholder="Seu e-mail" required />
-
-      <label for="password">Senha</label>
-      <input type="password" id="password" placeholder="Sua senha" required />
-
-      <div class="options">
-        <label class="remember">
-          <input type="checkbox" /> Lembrar de mim
-        </label>
-        <a href="#" class="forgot">Esqueci a senha</a>
-      </div>
-
-      <button type="submit" class="continue-btn">Entrar</button>
-
-      <p class="login-text">
-        Ainda não tem uma conta? <a href="/pages/cadastro.html">Cadastrar-se</a>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Star Wars: The Force Awakens</h1>
+      <p>
+        A terceira temporada da série The Mandalorian segue Din Djarin em
+        sua jornada pela galáxia após ser exilado de seu clã.
       </p>
-    </form>
-  </div>
+      <div class="hero-buttons">
+        <button class="btn btn-primary">Assistir Trailer</button>
+        <button class="btn">Adicionar à Lista</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="movies" id="lancamentos">
+    <h2>Lançamentos Recentes</h2>
+    <div class="movie-grid" data-category="recentes">
+      <!-- Filmes serão carregados dinamicamente via JavaScript -->
+    </div>
+  </section>
+
+  <section class="movies" id="acao">
+    <h2>Filmes de Ação</h2>
+    <div class="movie-grid" data-category="acao">
+      <!-- Filmes serão carregados dinamicamente via JavaScript -->
+    </div>
+  </section>
+
+  <section class="movies" id="drama">
+    <h2>Dramas</h2>
+    <div class="movie-grid" data-category="drama">
+      <!-- Filmes serão carregados dinamicamente via JavaScript -->
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2025 LuzCâmeraAção. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/home.js"></script>
+
+  <script>
+    // Simula login fixo temporário
+    if (!localStorage.getItem("currentUser")) {
+      localStorage.setItem("currentUser", JSON.stringify({
+        id: 1,
+        username: "Rodrigo",
+        email: "rodrigobolgheroni1@gmail.com",
+        idade: 18
+      }));
+      localStorage.setItem("authToken", "token-fixo");
+    }
+
+    // Função para redirecionar a pesquisa para a página de explorar
+    function buscar() {
+      const termo = document.getElementById("searchInput").value.trim();
+      if (termo) {
+        window.location.href = `/pages/explorar.html?query=${encodeURIComponent(termo)}`;
+      } else {
+        window.location.href = `/pages/explorar.html`;
+      }
+    }
+  </script>
 </body>
 </html>

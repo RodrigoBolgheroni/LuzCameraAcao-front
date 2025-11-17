@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Luis Henrique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="lines">
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="container">
+
+    <header>
+      <nav>
+        <a href="#hero">Sobre Mim</a>
+        <a href="#trips">Locais</a>
+        <a href="#curiosities">Curiosidades</a>
+        <a href="#projects">Meus projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+
+        <img src="./assets/images/profile.jpg" alt="Foto de Luis Henrique" id="profile-pic" class="purple-glow">
+
+        <h1>Sobre mim</h1>
+        <h2>Luis Henrique</h2>
+        <p>
+          Olá, meu nome é Luis Henrique. Tenho 16 anos, nasci em Osasco, mas
+          morei durante minha vida toda e moro até os dias de hoje no Morro
+          Doce, Zona Noroeste de São Paulo. Atualmente, atuo como desenvolvedor Backend no Instituto J&F.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="work-experience">
+        <h2 class="section-title">Minhas Experiências</h2>
+        <div class="work-grid">
+          <div class="work-card glass-card">
+            <img src="./assets/images/experiences/institutojef.png" alt="Foto do Instituto J&F"
+              class="work-experience-icon">
+            <div>
+              <h3>Instituto J&F</h3>
+              <p>Desenvolvedor Backend, São Paulo</p>
+            </div>
+          </div>
+          <div class="work-card glass-card">
+            <img src="./assets/images/experiences/krakensec.png" alt="Foto da Krakensec" class="work-experience-icon">
+            <div>
+              <h3>Kraken Security</h3>
+              <p>Desenvolvedor Frontend, Winnipeg</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="projects">
+        <h2 class="section-title">Meus projetos</h2>
+
+        <div class="project">
+        </div>
+
+        <div class="project">
+          <h3 class="section-title" style="font-size: 1.8rem;">Pontos de Interesse</h3>
+          <div class="project-layout">
+            <div class="project-text">
+              <p>
+                Desafio de backend que consistiu em desenvolver uma API REST para a empresa fictícia XY Inc.,
+                especializada em receptores GPS. O objetivo foi criar uma plataforma para gerenciar pontos de interesse
+                (POIs), fornecendo o sistema por trás de um dispositivo de localização.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/luismede/desafio-pointOfInterest" target="_blank"><img
+                    src="https://skillicons.dev/icons?i=github,spring,java" /></a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img src="./assets/images/projects/points-of-interest.png" alt="Foto descritiva do Desafio">
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3 class="section-title" style="font-size: 1.8rem;">Nutria</h3>
+          <div class="project-layout reverse">
+            <div class="project-text">
+              <p>
+                O Nutria é um aplicativo desenvolvido para engenheiros de alimentos que simplifica a criação e gestão de
+                tabelas nutricionais conforme as normas da ANVISA. Com uma interface moderna e recursos de automação e
+                inteligência artificial, o app acelera o desenvolvimento de novos produtos e reduz erros manuais.
+                Alinhado ao ODS 9 (Indústria, Inovação e Infraestrutura), o Nutria promove a digitalização e
+                modernização dos processos industriais no setor alimentício.
+              </p>
+              <div class="project-links">
+                <a href="https://www.instagram.com/nutria.oficial/" target="_blank"><img
+                    src="https://skillicons.dev/icons?i=instagram" /></a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img src="./assets/images/projects/nutria.jpg" alt="Foto dos integrantes do Nutria">
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3 class="section-title" style="font-size: 1.8rem;">Testes de carga e perfomanc</h3>
+          <div class="project-layout">
+            <div class="project-text">
+              <p>
+                Implementei testes de carga do zero na plataforma Odette utilizando o Grafana k6, com o objetivo de
+                avaliar o desempenho e a escalabilidade do sistema. A partir desses testes, foi possível identificar
+                diversos pontos de melhoria — especialmente na seção de quizzes, que apresentava falhas quando submetida
+                a um grande volume de acessos simultâneos.
+              </p>
+              <div class="project-links">
+                <a href="https://grafana.com/docs/k6/latest/" target="_blank"><img
+                    src="https://skillicons.dev/icons?i=grafana,js" /></a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img src="./assets/images/projects/grafana-dashboard.png" alt="Foto do dashboard do grafana K6">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="skills">
+        <p>
+          Atualmente, possuo experiência com diversas tecnologias, apresentadas a seguir, as quais tive a oportunidade
+          de aprender durante minha formação escolar e em outros momentos da minha trajetória.
+        </p>
+        <div class="skills-flex">
+          <img
+            src="https://skillicons.dev/icons?i=java,spring,postgresql,docker,git,ts,nest,prisma,azure,grafana,graphql,redis">
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="curiosities" class="content-section">
+        <h2 class="section-title">Curiosidades sobre mim</h2>
+        <ul>
+          <li>
+            Sou apaixonado por tecnologia desde os 10 anos, quando recebi meu
+            primeiro computador.
+          </li>
+          <li>
+            Sou apaixonado por Economia e Investimentos, pretendo fazer faculdade
+            de Economia no futuro.
+          </li>
+          <li>Mesmo sendo apaixonado por basquete, joguei futebol em dois times diferentes.</li>
+          <li>Meu sonho é ser pai de uma menina e ter um casal de filhos.</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="trips" class="content-section">
+        <h2 class="section-title">Locais que já conheci</h2>
+        <ol>
+          <li>Maceió</li>
+          <li>Paraíba</li>
+          <li>Rio Grande do Norte</li>
+          <li>Rio de Janeiro</li>
+          <li>Minas Gerais</li>
+          <li>Gramado, Rio Grande do Sul</li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="future-trips" class="content-section">
+        <h2 class="section-title">Locais que desejo conhecer</h2>
+        <ul>
+          <li>Amsterdã, Holanda</li>
+          <li>Paris, França</li>
+          <li>Porto Seguro, Bahia</li>
+          <li>Zermatt, Suíça</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="contact">
+        <h2 class="section-title">Contato</h2>
+        <p>
+          Caso tenha interesse, você pode entrar em contato comigo através de qualquer uma dessas redes...
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/luismede"><img src="https://skillicons.dev/icons?i=github"></a>
+          <a href="https://www.linkedin.com/in/luismedes/"><img src="https://skillicons.dev/icons?i=linkedin"></a>
+          <a href="https://www.instagram.com/_luismede/"><img src="https://skillicons.dev/icons?i=instagram"></a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Luis Henrique. Todos os direitos reservados.</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>

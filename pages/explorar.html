@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorar Filmes - LuzCâmeraAção</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo" onclick="window.location.href='/index.html'"><img src="/assets/images/logo_doro.svg" alt="" class="logo_img"></div>
+        <nav>
+          <a href="/index.html">Home</a>
+          <a href="/pages/explorar.html" class="active">Explorar</a>
+          <a href="/pages/favoritos.html">Favoritos</a>
+          <a href="/pages/sobre.html">Sobre</a>
+        </nav>
+        <div class="actions">
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder=" Buscar filmes..." 
+            class="search-bar"
+          >
+          <button class="search-btn" onclick="buscar()">Buscar</button>
+          <span class="user-name" style="color: white; margin: 0 15px;">Rodrigo</span>
+        </div>
+      </header>
+
+  <main>
+    <h2>Explorar Filmes</h2>
+    <div id="explorar-container" class="movie-grid">
+      <p class="empty-state">Carregando filmes...</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 LuzCâmeraAção. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/explorar.js"></script>
+  <script>
+        function buscar() {
+      const termo = document.getElementById("searchInput").value.trim();
+      if (termo) {
+        window.location.href = `/pages/explorar.html?query=${encodeURIComponent(termo)}`;
+      } else {
+        window.location.href = `/pages/explorar.html`;
+      }
+    }
+  </script>
+</body>
+</html>
