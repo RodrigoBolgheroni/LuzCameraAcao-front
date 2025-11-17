@@ -11,12 +11,12 @@
 
 <body>
   <header class="navbar">
-    <div class="logo" onclick="window.location.href='index.html'"><img src="/assets/images/logo_doro.svg" alt="" class="logo_img"></div>
+    <div class="logo" onclick="window.location.href='index.html'"><img src="./assets/css/style.css" alt="" class="logo_img"></div>
     <nav>
       <a href="index.html" class="active">Home</a>
-      <a href="/pages/explorar.html">Explorar</a>
-      <a href="/pages/favoritos.html">Favoritos</a>
-      <a href="/pages/sobre.html">Sobre</a>
+      <a href="./pages/explorar.html">Explorar</a>
+      <a href="./pages/favoritos.html">Favoritos</a>
+      <a href="./pages/sobre.html">Sobre</a>
     </nav>
     <div class="actions">
       <input 
@@ -71,8 +71,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="/assets/js/api.js"></script>
-  <script src="/assets/js/home.js"></script>
+  <script src="./assets/js/api.js"></script>
+  <script src="./assets/js/home.js"></script>
 
   <script>
     // Simula login fixo temporário
@@ -90,9 +90,9 @@
     function buscar() {
       const termo = document.getElementById("searchInput").value.trim();
       if (termo) {
-        window.location.href = `/pages/explorar.html?query=${encodeURIComponent(termo)}`;
+        window.location.href = `./pages/explorar.html?query=${encodeURIComponent(termo)}`;
       } else {
-        window.location.href = `/pages/explorar.html`;
+        window.location.href = `./pages/explorar.html`;
       }
     }
   </script>
