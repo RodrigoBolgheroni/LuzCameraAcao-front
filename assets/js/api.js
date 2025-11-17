@@ -40,7 +40,7 @@
     static logout() {
       this.removeToken();
       this.removeUser();
-      window.location.href = '/index.html';
+      window.location.href = '../index.html';
     }
   }
 

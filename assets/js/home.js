@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   if (!AuthService.isAuthenticated()) {
     console.log("Usuário não autenticado, redirecionando...");
-    window.location.href = '/index.html';
+    window.location.href = '../index.html';
     return;
   }
 

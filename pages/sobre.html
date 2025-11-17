@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sobre - LuzCâmeraAção</title>
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
   <header class="navbar">
     <div class="logo" onclick="window.location.href='/index.html'">
-      <img src="/assets/images/logo_doro.svg" alt="" class="logo_img">
+      <img src="../assets/images/logo_doro.svg" alt="" class="logo_img">
     </div>
     <nav>
-      <a href="/index.html">Home</a>
-      <a href="/pages/explorar.html">Explorar</a>
-      <a href="/pages/favoritos.html">Favoritos</a>
-      <a href="/pages/sobre.html" class="active">Sobre</a>
+      <a href="../index.html">Home</a>
+      <a href="../pages/explorar.html">Explorar</a>
+      <a href="../pages/favoritos.html">Favoritos</a>
+      <a href="../pages/sobre.html" class="active">Sobre</a>
     </nav>
     <div class="actions">
       <input 
@@ -36,7 +36,7 @@
       <div class="profile-card">
         <h3>Rodrigo Bolgheroni</h3>
         <p>Desenvolvedor, programador desde os 7 anos.</p>
-        <button class="btn-profile" onclick="window.location.href='/pages/sobre-rodrigo/index.html'">
+        <button class="btn-profile" onclick="window.location.href='../pages/sobre-rodrigo/index.html'">
           Ver Perfil
         </button>
       </div>
@@ -44,7 +44,7 @@
       <div class="profile-card">
         <h3>Luis Henrique</h3>
         <p>Desenvolvedor criativo desde os 10 anos</p>
-        <button class="btn-profile" onclick="window.location.href='/pages/sobre-luis/index.html'">
+        <button class="btn-profile" onclick="window.location.href='../pages/sobre-luis/index.html'">
           Ver Perfil
         </button>
       </div>
@@ -59,9 +59,9 @@
     function buscar() {
       const termo = document.getElementById("searchInput").value.trim();
       if (termo) {
-        window.location.href = `/pages/explorar.html?query=${encodeURIComponent(termo)}`;
+        window.location.href = `../pages/explorar.html?query=${encodeURIComponent(termo)}`;
       } else {
-        window.location.href = `/pages/explorar.html`;
+        window.location.href = `../pages/explorar.html`;
       }
     }
   </script>

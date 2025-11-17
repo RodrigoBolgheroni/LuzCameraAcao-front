@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   if (!AuthService.isAuthenticated()) {
     console.log("Usuário não autenticado, redirecionando...");
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
     return;
   }
 
@@ -127,7 +127,7 @@ function createMovieCard(movie, userRating = 0, isFavorite = false) {
   // Clique no card ou no título leva para detalhes
   card.addEventListener('click', (e) => {
     if (!e.target.closest('.stars-selection') && !e.target.closest('.btn-favorite')) {
-      window.location.href = `/pages/detalhes.html?id=${movie.id}`;
+      window.location.href = `../pages/detalhes.html?id=${movie.id}`;
     }
   });
 

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("✅ script.js carregado!");
+    console.log("script.js carregado!");
   
     const divFilme = document.getElementsByClassName("movie-card");
   

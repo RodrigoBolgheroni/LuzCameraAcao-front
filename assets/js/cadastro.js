@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Simula registro local
       localStorage.setItem('fakeUser', JSON.stringify({ username, email, password }));
       alert('Cadastro simulado com sucesso! Faça login.');
-      window.location.href = '/index.html';
+      window.location.href = '../index.html';
     });
   });
   

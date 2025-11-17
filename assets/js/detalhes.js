@@ -82,8 +82,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   function buscar() {
     const termo = document.getElementById("searchInput").value.trim();
     if (termo) {
-      window.location.href = `/pages/explorar.html?query=${encodeURIComponent(termo)}`;
+      window.location.href = `../pages/explorar.html?query=${encodeURIComponent(termo)}`;
     } else {
-      window.location.href = `/pages/explorar.html`;
+      window.location.href = `../pages/explorar.html`;
     }
   }

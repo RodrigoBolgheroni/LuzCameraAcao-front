@@ -24,6 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Logado como usuário padrão:", defaultUser);
 
     // Redireciona
-    window.location.href = "/pages/home.html";
+    window.location.href = "../pages/home.html";
   });
 });
